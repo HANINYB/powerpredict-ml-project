@@ -95,3 +95,4 @@ ________________________________
 2. and then we tried to modify the hidden layers with 3, and it improved to 2287 MaE. a big jump.
 3. we then modified the values of of alpha = 0.001 and max_iter = 500, and got 2248 MAE.
 4. finally i modified the learning rate alpha" and got 2230 MAE
+5. with 4 hidden layers, we got a huge jump to 2706
