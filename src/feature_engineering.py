@@ -37,13 +37,4 @@ def add_weather_features(df: pd.DataFrame) -> pd.DataFrame:
     # 6. Temperature non-linearity
     df["avg_temperature_squared"] = df["avg_temperature"] ** 2
 
-    # 7. Humidity squared
-    df["avg_humidity_squared"] = df["avg_humidity"] ** 2
-
-    # 8. Temp × humidity interaction
-    df["temp_x_humidity"] = df["avg_temperature"] * df["avg_humidity"]
-
-    # 9. Temp × rain interaction
-    df["temp_x_rain"] = df["avg_temperature"] * df["total_rain"]
-
     return df
